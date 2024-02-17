@@ -561,133 +561,68 @@ h1 span.stop-blinking::before {
     }
   }
 /*addition on 2nd page*/
-.blog-card{
-    position: absolute;
-    height: 370px;
-    width: 95%;
-    max-width: 435px;
-    margin: auto;
+::-webkit-scrollbar {
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
     border-radius: 25px;
-    background: white;
-    box-shadow: 0px 10px 50px rgba(252,56,56,.3);
   }
-  .inner-part{
-    position: absolute;
+  ::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+  }
+  .container {
     display: flex;
-    height: 360px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0px;
-    align-items: center;
-  }
-  
-  .content{
-    padding: 0 5px 0 10px;
-    width: 530px;
-    margin-left: 40px;
-    opacity: 0;
-    transition: .6s;
-  }
-  #tap-1:checked ~ .inner-part .content-1,
-  #tap-2:checked ~ .inner-part .content-2,
-  #tap-3:checked ~ .inner-part .content-3{
-    opacity: 1;
-    margin-left: 0px;
-    z-index: 100;
-    transition-delay: .3s;
-  }
-  .content span{
-    display: block;
-    color: #7b7992;
-    margin-bottom: 15px;
-    font-size: 22px;
-    font-weight: 500
-  }
-  .content .title{
-    font-size: 30px;
-    font-weight: 700;
-    color: #0d0925;
-    margin-bottom: 20px;
-  }
-  .content .text{
-    color: #4e4a67;
-    font-size: 15px;
-    margin-bottom: 10px;
-    line-height: 1.5em;
-    text-align: display;
-  }
-  .content button{
-    display: inline-flex;
-    padding: 15px 20px;
-    border: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff0e6;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    border: 1px solid #fd3535;
-    background: linear-gradient(147deg, hsl(196, 99%, 61%)  0%, hsl(217, 98%, 61%) 74%);
-  }
-  .content button:hover{
-    background: linear-gradient(147deg, hsl(203, 99%, 55%) 0%, hsl(219, 98%, 55%) 74%);
-  }
-  .sliders{
-    position: absolute;
-    bottom: 25px;
-    left: 65%;
-    transform: translateX(-50%);
-    z-index: 12;
-  }
-  #imgTap:checked ~ .sliders{
-    display: none;
-  }
-  .sliders .tap{
-    position: relative;
-    height: 10px;
-    width: 50px;
-    background: #d9d9d9;
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 3px;
-    cursor: pointer;
-  }
-  .sliders .tap:hover{
-    background: #cccccc;
-  }
-  .sliders .tap:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: -100%;
-    background: var(--main-color);
-    border-radius: 10px;
-    transform: scaleX(0);
-    transition: transform .6s;
-    transform-origin: left;
-  }
-  input[type="radio"],
-  input[type="checkbox"]{
-    display: none;
-  }
-  #tap-1:checked ~ .sliders .tap-1:before,
-  #tap-2:checked ~ .sliders .tap-2:before,
-  #tap-3:checked ~ .sliders .tap-3:before{
-    transform: scaleX(1);
+    gap: 12px;
+    max-width: 400px;
     width: 100%;
-  } 
-  .text {
-   max-width: 80%;
-   margin: 0 auto;
-   padding: 10px;
-   box-sizing: border-box;
-   font-size: 16px;
-   text-align: justify;
-   font-size: 19px;
-   margin-bottom: 30px;
-   margin: .2rem 0 .8rem;
-  } 
+    background: #4070f4;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .container .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .card .image {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    background: #4070f4;
+    border-radius: 50%;
+  }
+  .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  .card h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .card p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
