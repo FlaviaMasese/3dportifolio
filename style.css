@@ -577,14 +577,14 @@ h1 span.stop-blinking::before {
     height: 360px;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    padding: 0 0px;
     align-items: center;
   }
   
   .content{
-    padding: 0 20px 0 35px;
+    padding: 0 5px 0 10px;
     width: 530px;
-    margin-left: 50px;
+    margin-left: 40px;
     opacity: 0;
     transition: .6s;
   }
@@ -612,9 +612,9 @@ h1 span.stop-blinking::before {
   .content .text{
     color: #4e4a67;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.5em;
-    text-align: right;
+    text-align: display;
   }
   .content button{
     display: inline-flex;
