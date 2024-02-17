@@ -578,6 +578,7 @@ h1 span.stop-blinking::before {
     align-items: center;
     justify-content: center;
     padding: 0 25px;
+    align-items: center;
   }
   
   .content{
@@ -628,10 +629,10 @@ h1 span.stop-blinking::before {
     cursor: pointer;
     outline: none;
     border: 1px solid #fd3535;
-    background: linear-gradient(147deg, #fe8a39  0%, #fd3838 74%);
+    background: linear-gradient(147deg, hsl(196, 99%, 61%)  0%, hsl(217, 98%, 61%) 74%);
   }
   .content button:hover{
-    background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+    background: linear-gradient(147deg, hsl(203, 99%, 55%) 0%, hsl(219, 98%, 55%) 74%);
   }
   .sliders{
     position: absolute;
@@ -663,7 +664,7 @@ h1 span.stop-blinking::before {
     left: 0;
     height: 100%;
     width: -100%;
-    background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+    background: var(--main-color);
     border-radius: 10px;
     transform: scaleX(0);
     transition: transform .6s;
@@ -688,5 +689,5 @@ h1 span.stop-blinking::before {
    text-align: justify;
    font-size: 19px;
    margin-bottom: 30px;
-  line-height: 1.5em;
+   margin: .2rem 0 .8rem;
   } 
