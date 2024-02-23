@@ -1090,7 +1090,19 @@ i.fab{
     text-align: center;
   }
 
-  /*contact page*/
+  /*buttons */
+  .btn {
+    display: inline-block;
+    background:#8000806d;
+    color: #08080A;
+    
+    border: 2px solid #80008054;
+    transition: all 0.3s ease;
+}
+.btn :hover{
+    color: teal;
+    background: none;
+}
 
 
  
