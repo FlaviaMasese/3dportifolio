@@ -128,5 +128,11 @@ const typeEffect = () => {
 }
 typeEffect();
 
-
+//contact form
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    // Add logic for form submission (e.g., AJAX request)
+    console.log("Form submitted!");
+  });
+  
   
