@@ -1104,5 +1104,7 @@ i.fab{
     background: none;
 }
 
-
- 
+/*details */
+#more {
+  display: none;
+}
