@@ -151,3 +151,4 @@ document.getElementById("contactForm").addEventListener("submit", function (even
       moreText.style.display = "inline";
     }
   }
+  
